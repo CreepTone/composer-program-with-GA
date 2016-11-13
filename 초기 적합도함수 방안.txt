@@ -1,0 +1,24 @@
+적합도 함수 구하기
+
+Reference : Chord / Melody
+1. 코드
+	case : 원래 화음 (2 가산점)
+	case : 대리 화음 (2 가산점)
+	case : 2차 대리 화음 (1 가산점)
+	case : 다른 화음 (0 가산점)
+2. 멜로디
+	case : Chord 내의 음 (3 가산점)
+	case : 유사 Chord 내의 음 (2 가산점)
+	case : 그 외의 음 (0 가산점)
+
+	case : 전 음과 이어지는 음 (2 가산점)
+	case : 전 음과 3, 5도 차이나는 음 (2 가산점)
+	case : 전 음과 연관이 없는 음 (0 가산점)
+
+String 길이 : 128 (16beat * 8마디)
+Chord 길이 : 32 (4 * 8 마디)
+Chord 나타내는 법 : (근음 - 음 사이의 거리~)
+ex ) C Major 7 : 1323 = C, (C#, D, D#) E, (F, F), G, (G#, A, A#) B
+
+c c# d d# e f f# g g# a  a#  b
+0  1 2  3  4 5 6  7 8  9 10  11
